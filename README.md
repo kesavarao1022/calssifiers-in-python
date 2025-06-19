@@ -33,9 +33,6 @@ This project is ideal for beginners and intermediates looking to understand the 
 
 ---
 
-
----
-
 ## 📥 Getting Started
 
 ### Prerequisites
@@ -53,43 +50,41 @@ pip install -r requirements.txt
 ### 🧪 Example Workflow
 1. Data Import
 
-from src.data_import import load_data
+  from src.data_import import load_data
 
-df = load_data("data/sample_dataset.csv")  
+  df = load_data("data/sample_dataset.csv")  
 
 2. Preprocessing & Standardization
 
-from src.preprocessing import preprocess_data
+  from src.preprocessing import preprocess_data
 
 3. Model training
-X_scaled, y = preprocess_data(df)
-Model Training (e.g., Classification)
+  X_scaled, y = preprocess_data(df)
+  Model Training (e.g., Classification)
 
-from src.classification_models import train_svm_classifier
+  from src.classification_models import train_svm_classifier
 
-model = train_svm_classifier(X_scaled, y)
-Evaluation
+  model = train_svm_classifier(X_scaled, y)
 
-from src.evaluation import evaluate_model
+4. Evaluation
 
-evaluate_model(model, X_scaled, y)
+  from src.evaluation import evaluate_model
+
+  evaluate_model(model, X_scaled, y)
 
 ---
 
 ### 📊 Available Models
-Model Type	Model	Status
-Regression	Linear Regression	✅
 
-Classification	Logistic Regression	✅
+| Model Type     | Model               | Status |
+| -------------- | ------------------- | ------ |
+| Regression     | Linear Regression   | ✅      |
+| Classification | Logistic Regression | ✅      |
+| Classification | Decision Tree       | ✅      |
+| Classification | Random Forest       | ✅      |
+| Classification | SVM                 | ✅      |
+| Classification | KNN                 | ✅      |
+| Classification | Naive Bayes         | ✅      |
 
-Classification	Decision Tree	✅
-
-Classification	Random Forest	✅
-
-Classification	SVM	✅
-
-Classification	KNN	✅
-
-Classification	Naive Bayes	✅
 
 
