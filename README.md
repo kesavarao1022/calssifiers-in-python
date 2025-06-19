@@ -55,11 +55,13 @@ pip install -r requirements.txt
 
 from src.data_import import load_data
 
-df = load_data("data/sample_dataset.csv")
+df = load_data("data/sample_dataset.csv")  
+
 2. Preprocessing & Standardization
 
 from src.preprocessing import preprocess_data
 
+3. Model training
 X_scaled, y = preprocess_data(df)
 Model Training (e.g., Classification)
 
@@ -71,13 +73,23 @@ Evaluation
 from src.evaluation import evaluate_model
 
 evaluate_model(model, X_scaled, y)
+
+---
+
 ### 📊 Available Models
 Model Type	Model	Status
 Regression	Linear Regression	✅
+
 Classification	Logistic Regression	✅
+
 Classification	Decision Tree	✅
+
 Classification	Random Forest	✅
+
 Classification	SVM	✅
+
 Classification	KNN	✅
+
 Classification	Naive Bayes	✅
+
 
